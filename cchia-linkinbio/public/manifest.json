@@ -1,0 +1,18 @@
+{
+  "name": "CCHIA — Cámara Chilena de Inteligencia Artificial",
+  "short_name": "CCHIA",
+  "description": "Conectamos talento, industria y academia para una IA responsable en Chile",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1929",
+  "theme_color": "#0E3A66",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo exterior - Navy -->
+  <circle cx="50" cy="50" r="45" stroke="#0E3A66" stroke-width="3" fill="none" />
+  
+  <!-- Cerebro estilizado -->
+  <path d="M30 50 Q30 30 50 30 Q70 30 70 50" stroke="#0E3A66" stroke-width="4" fill="none" stroke-linecap="round" />
+  
+  <!-- Lazo AI - Teal claro -->
+  <path d="M35 55 Q40 45 50 50 Q60 55 65 50" stroke="#04B6A1" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Lazo AI - Teal oscuro -->
+  <path d="M40 60 Q45 52 50 55 Q55 58 60 55" stroke="#07809B" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Nodos -->
+  <circle cx="35" cy="50" r="3" fill="#04B6A1" />
+  <circle cx="50" cy="45" r="3" fill="#04B6A1" />
+  <circle cx="65" cy="50" r="3" fill="#07809B" />
+  
+  <!-- Texto AI -->
+  <text x="50" y="75" text-anchor="middle" font-size="16" font-weight="bold" fill="#0E3A66" font-family="Inter, sans-serif">AI</text>
+</svg>
