@@ -9,7 +9,7 @@ interface TooltipProps {
 export const Tooltip: React.FC<TooltipProps> = ({ content, children, delay = 200 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
-  const timeoutRef = useRef<NodeJS.Timeout>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
   const triggerRef = useRef<HTMLElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -31,10 +31,10 @@ export const Tooltip: React.FC<TooltipProps> = ({ content, children, delay = 200
     if (triggerRef.current && tooltipRef.current) {
       const triggerRect = triggerRef.current.getBoundingClientRect();
       const tooltipRect = tooltipRef.current.getBoundingClientRect();
-      
+
       const top = triggerRect.top - tooltipRect.height - 8;
       const left = triggerRect.left + (triggerRect.width - tooltipRect.width) / 2;
-      
+
       setPosition({ top, left });
     }
   };
