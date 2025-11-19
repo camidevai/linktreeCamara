@@ -32,9 +32,8 @@ export const links: Link[] = [
   {
     id: "game",
     label: "Juego",
-    href: "#",
-    subtitle: "Próximamente",
-    icon: "gamepad2",
-    disabled: true
+    href: "https://astonishing-pegasus-e99eb6.netlify.app/",
+    subtitle: "Juega ahora",
+    icon: "gamepad2"
   }
 ];

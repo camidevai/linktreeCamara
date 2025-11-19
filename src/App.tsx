@@ -13,11 +13,6 @@ function App() {
     document.documentElement.style.setProperty('--brand-teal-2', brand.colors.teal2);
   }, []);
 
-  const scrollToRequest = () => {
-    const requestCard = document.querySelector('[data-link="request"]');
-    requestCard?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  };
-
   return (
     <>
       <Helmet>
@@ -26,7 +21,7 @@ function App() {
           name="description"
           content="Conectamos talento, industria y academia para una IA responsable en Chile."
         />
-        
+
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="CCHIA — Cámara Chilena de Inteligencia Artificial" />
@@ -36,7 +31,7 @@ function App() {
         />
         <meta property="og:image" content="/og-cchia.jpg" />
         <meta property="og:site_name" content="CCHIA" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="CCHIA — Cámara Chilena de Inteligencia Artificial" />
@@ -45,7 +40,7 @@ function App() {
           content="Conectamos talento, industria y academia para una IA responsable en Chile."
         />
         <meta name="twitter:image" content="/og-cchia.jpg" />
-        
+
         {/* PWA */}
         <meta name="theme-color" content="#0E3A66" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -83,13 +78,15 @@ function App() {
         {/* Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[var(--brand-bg-start)] via-[var(--brand-bg-start)]/95 to-transparent backdrop-blur-sm z-40">
           <div className="max-w-[520px] md:max-w-[720px] mx-auto">
-            <button
-              onClick={scrollToRequest}
-              className="w-full py-4 px-6 rounded-2xl font-semibold text-white bg-gradient-to-r from-brand-teal-1 to-brand-teal-2 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal-1 focus-visible:ring-offset-2"
+            <a
+              href="https://www.cchia.cl/request-info"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-4 px-6 rounded-2xl font-semibold text-white bg-gradient-to-r from-brand-teal-1 to-brand-teal-2 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal-1 focus-visible:ring-offset-2 text-center"
               aria-label="Ir a solicitar información"
             >
               Unirse a la CCHIA
-            </button>
+            </a>
           </div>
         </div>
 
